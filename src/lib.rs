@@ -50,6 +50,7 @@ fn game_to_yaw(game: &str) -> f64 {
 }
 
 pub fn convert_sens<'a>(origin: &str, target: &str, sensitivity: &str) -> String {
+    // Forumla: converted = sensitivity * (origin game yaw / target game yaw)
     let converted = (sensitivity.parse::<f64>().unwrap()
         * (game_to_yaw(origin) / game_to_yaw(target)))
     .to_string();

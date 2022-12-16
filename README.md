@@ -10,7 +10,7 @@ A simple console application for converting sensitivity across games.
 
 3. `cargo run <origin game> <target game> <sensitivity>`
 
-4. Dominate your lobbies with your converted sensitivity.
+4. Click heads with your newly converted sensitivity.
 
 ## TODO
 
