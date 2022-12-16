@@ -11,11 +11,6 @@ fn main() {
         process::exit(1);
     });
 
-    println!(
-        "From {} to {}. DPI: {}, Sensitivity: {}",
-        config.origin, config.target, config.dpi, config.sensitivity
-    );
-
     if let Err(e) = rustivity::run(config) {
         println!("Application error: {e}");
         process::exit(1);
