@@ -12,6 +12,13 @@ A simple console application for converting sensitivity across games.
 
 4. Click heads with your newly converted sensitivity.
 
+<hr>
+
+Example figure:
+![example of code running](rustivity.png)
+
+<hr>
+
 ## TODO
 
 -   [x] Convert sensitivity across my favourite games
