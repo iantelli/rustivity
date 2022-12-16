@@ -45,7 +45,9 @@ fn game_to_yaw(game: &str) -> f64 {
         "VAL" | "VALORANT" => yaw_values(Yaw::Valorant),
         "APEX" | "APEX LEGENDS" => yaw_values(Yaw::Apex),
         "CS" | "CSGO" => yaw_values(Yaw::CSGO),
-        _ => 0.0,
+        _ => panic!(
+            "Unknown game \n Supported games: [\nOverwatch | OW, \nValorant | VAL, \nApex Legends | APEX, \nCSGO | CS \n]"
+        ),
     }
 }
 
@@ -70,10 +72,13 @@ pub fn normalize_game_name(game: String) -> String {
 pub fn run(config: Config) -> Result<(), Box<dyn Error>> {
     let converted = convert_sens(&config.origin, &config.target, &config.sensitivity);
     println!(
-        "From: {} to {}. Converted Sens: {}",
+        "{} \n Origin game: {} \n Target game: {} \n Original sensitivity: {} \n Converted sensitivity: {} \n{}",
+        "-".repeat(50),
         normalize_game_name(config.origin),
         normalize_game_name(config.target),
-        converted
+        config.sensitivity,
+        converted,
+        "-".repeat(50)
     );
     Ok(())
 }
