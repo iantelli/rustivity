@@ -20,8 +20,13 @@ A simple console application for converting sensitivity across games.
 
 <hr>
 
-Example figure:
-![example of code running](rustivity.png)
+Example figure (Converting Overwatch to Valorant, Sensitivity: 6, DPI: 800):
+![Converting Overwatch to Valorant, Sensitivity: 6, DPI: 800](rustivity.png)
+
+<br>
+
+Example figure 2 (Converting Overwatch to Apex Legends, Sensitivity: 7.2, DPI: 800, new DPI: 1600):
+![Converting Overwatch to Apex Legends, Sensitivity: 7.2, DPI: 800, new DPI: 1600](rustivity2.png)
 
 <hr>
 
